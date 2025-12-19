@@ -12,7 +12,7 @@ if not API_KEY:
 
 BASE_URL = "https://api.balldontlie.io/v1"
 
-def fetch_games(season=2025, per_page=5):
+def fetch_games(season=2025, per_page=10):
     headers = {"Authorization": API_KEY}
     params = {
         "seasons[]": season,
